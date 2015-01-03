@@ -44,6 +44,7 @@ syntax match  kag3LabelDescBar      "|"   contained
 
 " Comment
 syntax match  kag3Comment           ";.*"
+syntax region kag3Comment           start="/\*" end="\*/"
 
 " Include TJS2 syntax.
 if globpath(&rtp, 'syntax/tjs2.vim') != ''
